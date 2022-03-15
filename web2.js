@@ -10,11 +10,14 @@ function toggleText() {
     btnText.innerHTML = "More →";
     text.style.marginLeft = null;
     text.style.opacity = 0;
+    window.scrollTo(0, 0);;
 
   } else {
     btnText.innerHTML = "Less ←";
     text.style.marginLeft = 0 + "px";
+    text.style.color = "black";
     text.style.opacity = 1;
+    text.scrollIntoView(false);
 
   }
 }
